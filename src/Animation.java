@@ -96,11 +96,11 @@ public class Animation {
 				dist = Math.round(dist);
 				dist = dist/100;
 			
-				double radius = Math.round( (a.radius +  b.radius) *100);
-				radius = radius/100;
+				double radius =  (a.radius +  b.radius);
+		
 				
 				System.out.println("dist "+ dist + " , radius " + (radius) );
-				if(dist == (a.radius + b.radius)) {
+				if( (radius/dist)*100 >= 99) {
 					a.collided(b);
 					collided.add(b);
 				}
