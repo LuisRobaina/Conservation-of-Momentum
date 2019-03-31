@@ -116,7 +116,7 @@ public class Animation {
 			for (Particle p : system) {
 				StdDraw.filledCircle(p.x, p.y, p.radius);
 				StdDraw.setPenColor(Color.BLUE);
-				StdDraw.text(p.x, p.y, "V = "+  ( Math.round( (Math.sqrt(Math.pow(p.velocity_X,2) + Math.pow(p.velocity_Y, 2)))*1000 ) ) /1000);
+				StdDraw.text(p.x, p.y, "P = "+  ( Math.round( (Math.sqrt(Math.pow(p.velocity_X,2) + Math.pow(p.velocity_Y, 2) * p.mass )) *1000 ) )/1000);
 				StdDraw.setPenColor(Color.BLACK);
 			}
 			
