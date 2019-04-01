@@ -100,7 +100,7 @@ public class Animation {
 		
 				
 				System.out.println("dist "+ dist + " , radius " + (radius) );
-				if( (radius/dist)*100 >= 99) {
+				if( (radius/dist)*100 >= 100) {
 					a.collided(b);
 					collided.add(b);
 				}
